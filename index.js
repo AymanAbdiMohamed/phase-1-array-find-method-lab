@@ -1,5 +1,5 @@
-function findSuperbowlWin(records) {
-  const winRecord = records.find(record => record.result === "W" && record.team === "Denver Broncos");
+function superbowlWin(records) {
+  const winRecord = records.find(record => record.result === "W" );
   return winRecord ? winRecord.year : undefined;
 }
-import { findSuperbowlWin } from './index.js';  // Adjust the name here
+
